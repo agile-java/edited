@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login System</title>
+        <title>Cashier Login</title>
     </head>
  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <body>
@@ -26,42 +26,27 @@
         %>
         <br><br>
     
-        <div class="container col-md-4 ">
+        <div class="container col-md-6 ">
         	<form action="cashierServlet" method="post">
-  		       <div class="card ">
-	        	<div class="card-header text-center font-weight-bold">
+  		<div class="card ">
+	        	<div class="card-header text-left font-weight-bold">
 	        		Login
 	        	</div>
 	        	<div class="card-body">
-	        		 <table class="form-group">
-						
-						<tr>
-						<td>Enter Username</td>
-						
-						<td><input type="text" class="form-control" name="username" /></td>
-						
-						</tr>
-						
-						<tr>
-						<td >Enter Password</td>
-						<td><input type="password" class="form-control" name="password" /></td>
-						</tr>
-						</table>
-						<div class="row mx-auto">
-						<input type="submit" class="form-control btn btn-primary" value="Log In" />
-						
-						</div>
-						 
-						
-						</div>
-
-                
-            </div>
-	                        		
+	        		 
+	                    <div class="form-group">
+	                    	<input type="text" name="username" required class="form-control" placeholder="Executive Name"/>
+	                    </div>
+	                	<div class="form-group">
+	                		<input type="password" name="password" required class="form-control" placeholder="Password"/>
+	                	</div>
+	        		
+	        	</div>
+	        	<div class="card-footer text-center">
+	        		<input type="submit" value="Login" class="btn btn-primary"/>
+	        	</div>
+       		</div>
         	</form>
-        	<a href="index.jsp"><< Back To Home</a><br /><br>
-         </div>  
+        </div>
     </body>
-</html>
-
 </html>
