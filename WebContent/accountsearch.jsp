@@ -1,6 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Cashier Login</title>
+        <title>search customer</title>
     </head>
  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <body>
@@ -27,7 +30,8 @@
         <br><br>
     
         <div class="container col-md-5 ">
-        	<form class="needs-validation" action="cashierServlet" method="post">
+        <form action="AccountSearch" class="needs-validation" method="post">
+        	
   		<div class="card ">
 	        	<div class="card-header text-left font-weight-bold">
 	        		Account Search
@@ -35,6 +39,7 @@
 	        	<div class="card-body">
 	        		 
 	                    <div class="form-group">
+	                    
 	                    	<input type="text" name="accountid" class="form-control" placeholder="Account Id" />
 	                    </div>
 	                	

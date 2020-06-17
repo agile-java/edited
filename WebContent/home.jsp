@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>HOME</title>
 </head>
+
 <body>
 
 <h2 align="center">customer management</h2>

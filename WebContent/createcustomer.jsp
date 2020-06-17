@@ -41,7 +41,7 @@
 <div class="container">
 
 <div class="row justify-content-center">
-<div class="form-group col-md-4 col-md-offset-5 align-center ">
+<div class="form-group  col-md-4 col-md-offset-5 align-center ">
 
 <form class="needs-validation" action="CustomerCreateServlet" method="post">
 <table>
