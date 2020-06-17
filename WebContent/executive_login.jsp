@@ -27,7 +27,7 @@
         <br><br>
     
         <div class="container col-md-5 ">
-        	<form action="Exe_loginServlet" method="post">
+        	<form class="needs-validation" action="Exe_loginServlet" method="post">
   		<div class="card ">
 	        	<div class="card-header text-left font-weight-bold">
 	        		Login
@@ -52,8 +52,3 @@
         </div>
     </body>
 </html>
-
-
-
-
-

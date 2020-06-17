@@ -6,7 +6,7 @@
     <body>
     <jsp:include page="masterPage.jsp" />
            <%
-        String userName=(String)session.getAttribute("userName");
+        String userName=(String)session.getAttribute("username");
         
         //redirect user to home page if already logged in
         if(userName!=null){
@@ -26,8 +26,8 @@
         %>
         <br><br>
     
-        <div class="container col-md-6 ">
-        	<form action="cashierServlet" method="post">
+        <div class="container col-md-5 ">
+        	<form class="needs-validation" action="cashierServlet" method="post">
   		<div class="card ">
 	        	<div class="card-header text-left font-weight-bold">
 	        		Login

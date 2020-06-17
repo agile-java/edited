@@ -8,15 +8,33 @@
 <meta charset="ISO-8859-1">
 <title>search result</title>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <body>
+    <jsp:include page="masterPage.jsp" />
+    
 <% CustomerBean cust=(CustomerBean)session.getAttribute("customer");
 
 %>
+
+<br><br>
+<div class="container col-md-6 ">
+<div class="row justify-content-center">
 <h2>search result</h2>
+</div>
+</div>
+
+<div class="container">
+
+<div class="row justify-content-center">
+<div class="form-group col-md-4 col-md-offset-5 align-center ">
 
 <form>
-<table>
+<div class="row justify-content-center">
+    <div class="col-auto">
+      <table class="table table-responsive table-borderless">
+    
 
+<tbody>
 <tr>
 <td>Customer Id</td>
 <td>:<%out.print(cust.getCustomerid()); %></td>
@@ -52,12 +70,20 @@
 <td>:<%out.print(cust.getState()); %></td>
 </tr>
 
+
 <tr>
-<td><input type="button" value="update" onclick="location.href='updatecustomer.jsp';"/></td>
-<td><input type="button" value="delete" onclick="location.href='customerdelete.jsp';"/></td>
+
+<td rowspan="2"><input type="button" class="form-control btn btn-primary" value="update" onclick="location.href='updatecustomer.jsp';"/></td>
+<td><input type="button" class="form-control btn btn-primary" value="delete" onclick="location.href='customerdelete.jsp';"/></td>
 </tr>
 
 </table>
+<br><br>
+</div>
+</div>
 </form>
+</div>
+</div>
+</div>
 </body>
 </html>

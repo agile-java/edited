@@ -8,7 +8,26 @@
 </head>
 <body>
 <jsp:include page="masterPage.jsp" />
-<br><br>
+<%
+        String userName=(String)session.getAttribute("userName");
+        
+        //redirect user to home page if already logged in
+        if(userName!=null){
+            response.sendRedirect("EmployeeController?action=LIST");
+        }
+ 
+        String status=request.getParameter("status");
+        
+        if(status!=null){
+        	if(status.equals("false")){
+        		   out.print("Incorrect login details!");	           		
+        	}
+        	else{
+        		out.print("Some error occurred!");
+        	}
+        }
+        %>
+
 <div class="container">
 <div class="row justify-content-center">
 
@@ -17,19 +36,19 @@
 
 </div>
 </div>
-<br>
+
 
 <div class="container">
 
 <div class="row justify-content-center">
 <div class="form-group col-md-4 col-md-offset-5 align-center ">
 
-<form action="CustomerCreateServlet" method="post">
+<form class="needs-validation" action="CustomerCreateServlet" method="post">
 <table>
 
 <tr>
 <td>Customer SSN Id</td>
-<td><input type="text" Class="form-control" name="ssnid" /></td>
+<td ><input type="text"  Class="form-control" name="ssnid" /></td>
 </tr>
 
 <tr>
